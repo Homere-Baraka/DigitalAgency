@@ -1,0 +1,1846 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <title>Responsive Navigation</title>
+    <link rel="stylesheet" href="./src/output.css" />
+  </head>
+  <body class="">
+    <!-- la barre de navigation -->
+
+    <header
+      class="w-full flex bg-white text-white z-50 py-4 lg:py-0 px-6 lg:px-20 xl:px-32 xls:px-40 fixed justify-between items-center shadow-md"
+    >
+      <a href="#" class="text-xl font-bold md:block text-principal">Logo</a>
+      <ul
+        class="py-4 text-text justify-between items-center w-[50%] hidden lg:flex"
+      >
+        <li>
+          <a href="#" class="hover:text-principal duration-300">Home</a>
+        </li>
+        <li><a href="#" class="hover:text-principal duration-300">About</a></li>
+        <li>
+          <a href="#" class="hover:text-principal duration-300">Services</a>
+        </li>
+        <li>
+          <a href="#" class="hover:text-principal duration-300">Case studies</a>
+        </li>
+        <li><a href="#" class="hover:text-principal duration-300">Blog</a></li>
+        <li>
+          <a href="#" class="hover:text-principal duration-300">How it Work</a>
+        </li>
+        <li><a href="#" class="hover:text-principal duration-300">Hire</a></li>
+      </ul>
+      <button
+        class="px-4 py-2 rounded-md bg-gradient-to-r from-mauve to-principal font-bold text-[#ffffff] hidden lg:flex"
+      >
+        Contact us
+      </button>
+      <button id="menu-btn" class="focus:outline-none flex lg:hidden">
+        <i class="bi bi-list text-3xl text-principal"></i>
+      </button>
+    </header>
+
+    <div
+      id="mobile-menu"
+      class="fixed top-0 left-0 w-full h-full bg-bg1 text-white hidden z-50"
+    >
+      <div class="h-full w-full bg-white shadow-lg">
+        <div
+          class="flex justify-between items-center px-6 py-4 border-b border-text bg-transparent"
+        >
+          <a href="#" class="text-xl font-bold text-principal">Logo</a>
+          <button id="close-btn" class="focus:outline-none">
+            <i class="bi bi-x-square text-3xl text-principal"></i>
+          </button>
+        </div>
+        <!-- le menus qui s'affiche lorsque on fait un clic sur l'icone list -->
+
+        <nav class="flex flex-col h-full px-6 lg:px-20 xl:px-32 xls:px-40">
+          <ul class="py-4 space-y-4 text-text">
+            <li
+              class="flex gap-4 hover:bg-principal hover:text-white duration-300 py-2 w-full hover:rounded-lg px-4"
+            >
+              <i class="bi bi-house-door-fill"></i>
+              <a href="./AgenceTest.html" class="hover:text-text">Home</a>
+            </li>
+            <li
+              class="flex gap-4 hover:bg-principal hover:text-white duration-300 py-2 w-full hover:rounded-lg px-4"
+            >
+              <i class="bi bi-exclamation-circle-fill"></i>
+              <a href="#" class="hover:text-text">About</a>
+            </li>
+            <li
+              class="flex gap-4 hover:bg-principal hover:text-white duration-300 py-2 w-full hover:rounded-lg px-4"
+            >
+              <i class="bi bi-cart"></i>
+              <a href="#" class="hover:text-text">Services</a>
+            </li>
+            <li
+              class="flex gap-4 hover:bg-principal hover:text-white duration-300 py-2 w-full hover:rounded-lg px-4"
+            >
+              <i class="bi bi-backpack-fill"></i>
+              <a href="#" class="hover:text-text">Case studies</a>
+            </li>
+            <li
+              class="flex gap-4 hover:bg-principal hover:text-white duration-300 py-2 w-full hover:rounded-lg px-4"
+            >
+              <i class="bi bi-command"></i>
+              <a href="#" class="hover:text-text">Blog</a>
+            </li>
+            <li
+              class="flex gap-4 hover:bg-principal hover:text-white duration-300 py-2 w-full hover:rounded-lg px-4"
+            >
+              <i class="bi bi-escape"></i
+              ><a href="#" class="hover:text-text">How it Work</a>
+            </li>
+            <li
+              class="flex gap-4 hover:bg-principal hover:text-white duration-300 py-2 w-full hover:rounded-lg px-4"
+            >
+              <i class="bi bi-flower2"></i>
+              <a href="#" class="hover:text-text">Hire</a>
+            </li>
+          </ul>
+          <div class="mt-20">
+            <button class="bg-principal text-white py-2 px-4 w-full rounded-md">
+              Contact us
+            </button>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <!-- la première section de la presentation de nos services -->
+
+    <section class="w-full flex flex-col pt-6 relative z-10">
+      <div
+        class="w-full lg:flex items-center lg:h-screen mt-20 px-6 lg:px-20 xl:px-32 xls:px-40"
+      >
+        <div
+          class="animations lg:w-[40%] w-full h-1/2 lg:mb-32 lg:justify-center lg:h-screen flex flex-col gap-6"
+        >
+          <div class="flex flex-col justify-center items-center lg:justify-start lg:items-start">
+            <p
+              data-aos="fade-right"
+              data-aos-delay="0"
+              data-aos-duration="1000"
+              class="text-3xl text-dark"
+            >
+              Great <span class="text-principal">software</span> is
+            </p>
+            <h1
+              data-aos="fade-right"
+              data-aos-delay="500"
+              data-aos-duration="1000"
+              class="font-bold text-dark text-3xl"
+            >
+              built by great <span class="text-principal">items</span>
+            </h1>
+            <p
+              data-aos="fade-right"
+              data-aos-delay="1500"
+              data-aos-duration="1000"
+              class="text-text pt-4 text-center lg:text-start"
+            >
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero
+              odio ipsam nulla amet accusamus ducimus exercitationem sit dolor
+              ipsa similique id maxime minus, soluta vero autem laborum modi
+              voluptatum quod?
+            </p>
+          </div>
+          <div class="lg:w-full flex lg:justify-start justify-center items-center lg:items-start lg:mt-16">
+            <button
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom"
+              class="bg-mauve text-white shadow-lg font-bold rounded-md py-2 px-4 w-full md:w-[30%] lg:w-1/2"
+            >
+              Getstarted
+            </button>
+          </div>
+        </div>
+        <div class="lg:w-[60%] w-full h-1/2 flex lg:justify-center lg:h-screen">
+          <img
+            data-aos="fade-left"
+            data-aos-delay="0"
+            data-aos-duration="1000"
+            src="./img/home_page.png"
+            alt=""
+            class="animations lg:h-[80%]  xl:w-full "
+          />
+        </div>
+      </div>
+      <div class="w-full flex-start flex lg:justify-center lg:pr-96 pl-32">
+        <div
+          class="w-16 h-8 rounded-t-full bg-gradient-to-r from-mauve to-principal"
+        ></div>
+      </div>
+      <div
+        class="bg-bg1 w-full flex flex-col px-6 py-10 lg:px-20 xl:px-32 xls:px-40"
+      >
+        <h1 class="text-3xl font-bold text-center text-dark pb-10">
+          Services we offer
+        </h1>
+        <div class="w-full flex-col justify-center items-center">
+          <div
+            class="w-full flex gap-4 justify-center items-center md:justify-between flex-col md:flex-row"
+          >
+            <div
+              data-aos="fade-right"
+              data-aos-delay="0"
+              data-aos-duration="1000"
+              id="block1"
+              class="animation content-block rounded-md cache shadow shadow-shadow hover:rounded-md w-[333px] h-[287px] px-5 py-10 hover:border hover:border-principal duration-300"
+            >
+              <img
+                src="./img/Service2.png"
+                class="w-[58px] h-[58px] rounded-full border border-principal"
+                alt=""
+              />
+              <h2
+                class="font-bold text-[13px] text-dark hover:text-principal py-4"
+              >
+                Web Design & Developpement
+              </h2>
+              <p class="text-text text-sm">
+                Lorem ipsum dolor sit, amet consectetur provident quis vitae
+                deleniti1
+              </p>
+            </div>
+            <div
+              data-aos="fade-right"
+              data-aos-delay="500"
+              data-aos-duration="1000"
+              id="block1"
+              class="animation content-block rounded-md cache shadow shadow-shadow hover:rounded-md w-[333px] h-[287px] px-5 py-10 hover:border hover:border-principal duration-200"
+            >
+              <img
+                src="./img/code 1.png"
+                class="w-[58px] h-[58px] rounded-full"
+                alt=""
+              />
+              <h2
+                class="font-bold text-[13px] text-dark hover:text-principal py-4"
+              >
+                Mobile App Devepment
+              </h2>
+              <p class="text-text text-sm">
+                Lorem ipsum dolor sit, amet consectetur provident quis vitae
+                deleniti2
+              </p>
+            </div>
+            <div
+              data-aos="fade-right"
+              data-aos-delay="0"
+              data-aos-duration="1000"
+              id="block1"
+              class="animation content-block rounded-md cache shadow shadow-shadow hover:rounded-md w-[333px] h-[287px] px-5 py-10 hover:border hover:border-principal duration-300"
+            >
+              <img
+                src="./img/Service2.png"
+                class="w-[58px] h-[58px] rounded-full border border-principal"
+                alt=""
+              />
+              <h2
+                class="font-bold text-[13px] text-dark hover:text-prborder-principal py-4"
+              >
+                Software Testing Service
+              </h2>
+              <p class="text-text text-sm">
+                Lorem ipsum dolor sit, amet consectetur provident quis vitae
+                deleniti3
+              </p>
+            </div>
+            <div
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-center"
+              id="block1"
+              class="animation content-block md:hidden lg:flex-col rounded-md cache shadow shadow-shadow hover:rounded-md w-[333px] h-[287px] px-5 py-10 hover:border hover:border-principal duration-300"
+            >
+              <img
+                src="./img/code 1.png"
+                class="w-[58px] h-[58px] rounded-full"
+                alt=""
+              />
+              <h2
+                class="font-bold text-[13px] text-dark hover:text-priborder-principal py-4"
+              >
+                Mobile App Development
+              </h2>
+              <p class="text-text text-sm">
+                Lorem ipsum dolor sit, amet consectetur provident quis vitae
+                deleniti4
+              </p>
+            </div>
+            <div
+              id="block1"
+              class="animation content-block md:hidden lg:flex-col rounded-md cache shadow shadow-shadow hover:rounded-md w-[333px] h-[287px] px-5 py-10 hover:border hover:border-principal duration-300"
+            >
+              <img
+                src="./img/Service2.png"
+                class="w-[58px] h-[58px] rounded-full border border-principal"
+                alt=""
+              />
+              <h2
+                class="font-bold text-[13px] text-dark hover:text-priborder-principal py-4"
+              >
+                Software Testing Service
+              </h2>
+              <p class="text-text text-sm">
+                Lorem ipsum dolor sit, amet consectetur provident quis vitae
+                deleniti5
+              </p>
+            </div>
+          </div>
+          <div
+            class="w-full md:flex justify-center items-center mt-5 gap-2 hidden"
+          >
+            <i
+              id="service1"
+              class="bi bi-circle text-xs cache1 text-principal icon cursor-pointer"
+              data-target="block1"
+            ></i>
+            <i
+              id="service1"
+              class="bi bi-circle text-xs cache2 text-principal icon cursor-pointer"
+              data-target="block1"
+            ></i>
+            <i
+              id="service1"
+              class="bi bi-circle text-xs cache3 text-principal icon cursor-pointer"
+              data-target="block1"
+            ></i>
+            <i
+              id="service2"
+              class="bi bi-circle text-xs cache4 text-principal icon cursor-pointer"
+              data-target="block2"
+            ></i>
+            <i
+              id="service3"
+              class="bi bi-circle text-xs cache5 text-principal icon cursor-pointer"
+              data-target="block3"
+            ></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- ils nous font confiance -->
+
+      <div class="bg-white w-full flex flex-col">
+        <div class="w-full flex-start px-6 lg:pl-40">
+          <div
+            class="w-16 h-8 rounded-b-full bg-gradient-to-r from-mauve to-principal"
+          ></div>
+        </div>
+
+        <div class="px-6 lg:w-full lg:px-20 xl:px-32 xls:px-40 lg:flex">
+          <!-- les grandes entreprises nous font confiance pour developper des logiciels -->
+
+          <div class="mt-20 lg:mt-10 lg:w-[50%]">
+            <div class="w-full flex-start">
+              <div
+                class="w-16 h-1 rounded-md bg-gradient-to-r from-mauve to-principal"
+              ></div>
+            </div>
+            <div class="pt-6 animation">
+              <h2
+                data-aos="fade-right"
+                data-aos-delay="0"
+                data-aos-duration="1000"
+                class="text-dark text-3xl"
+              >
+                Leanding companies trust us
+              </h2>
+              <h2
+                data-aos="fade-right"
+                data-aos-delay="0"
+                data-aos-duration="1000"
+                class="text-dark font-bold text-3xl"
+              >
+                to develop software
+              </h2>
+              <div
+                data-aos="fade-right"
+                data-aos-delay="500"
+                data-aos-duration="1000"
+                class="mt-5 flex flex-col gap-6"
+              >
+                <p class="text-text2 text-[18px]">
+                  Lorem ipsum dolor
+                  <span class="text-principal">Add development capacity</span>
+                  sit amet, consectetur adipisicing elit. At aperiam quasi
+                  nostrum dolor reprehenderit amet obcaecati consequatur
+                  accusantium ab incidunt fuga facilis aliquam similique
+                  voluptatum modi suscipit, corporis rem mollitia?...
+                </p>
+                <a href="#" class="text-principal flex items-center gap-2 p-4"
+                  >See more information
+                  <i class="bi bi-arrow-right text-3xl text-principal"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="lg:w-[50%] lg:flex">
+            <img
+              src="./img/Rectangle 9.png"
+              data-aos="fade-right"
+              data-aos-delay="0"
+              data-aos-duration="1500"
+              class="animation w-full"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <!-- nos partenaires -->
+      </div>
+      <div class="w-full flex-start px-6 lg:px-20 xl:px-32 xls:px-40 mt-20">
+        <div
+          class="w-16 h-1 rounded-md bg-gradient-to-r from-mauve to-principal"
+        ></div>
+      </div>
+      <div class="pt-6 md:px-10 lg:px-20 xl:px-32 xls:px-40 px-6">
+        <h2
+          data-aos="fade-right"
+          data-aos-delay="0"
+          data-aos-duration="1000"
+          class="text-dark text-3xl"
+        >
+          Meet the people
+        </h2>
+        <h2
+          data-aos="fade-right"
+          data-aos-delay="0"
+          data-aos-duration="1000"
+          class="text-dark font-bold text-3xl"
+        >
+          We are Working With
+        </h2>
+      </div>
+      <div class="w-full flex justify-end px-6">
+        <div
+          data-aos="fade-right"
+          data-aos-delay="500"
+          data-aos-duration="1000"
+          class="flex gap-4 py-4"
+        >
+          <i
+            id="left"
+            class="bi bi-arrow-left-circle text-4xl text-mauve cursor-pointer"
+          ></i>
+          <i
+            id="right"
+            class="bi bi-arrow-right-circle-fill text-4xl text-mauve cursor-pointer"
+          ></i>
+        </div>
+      </div>
+      <div class="w-full flex items-center pl-32 flex-center px-6">
+        <div
+          class="w-16 h-8 rounded-t-full bg-gradient-to-r from-mauve to-principal"
+        ></div>
+      </div>
+      <div
+        class="w-full flex items-center gap-10 py-8 px-10 lg:px-20 xl:px-32 xls:px-40 overflow-hidden bg-bg_parten"
+      >
+        <img
+          id="slider"
+          src="./img/A1.png"
+          alt=""
+          class="bg-contain h-20 slider-image transition-all duration-500 ease-in-out"
+        />
+        <img
+          id="slider"
+          src="./img/A2.png"
+          alt=""
+          class="bg-contain h-20 slider-image transition-all duration-500 ease-in-out"
+        />
+        <img
+          id="slider"
+          src="./img/A3.png"
+          alt=""
+          class="bg-contain h-20 slider-image transition-all duration-500 ease-in-out"
+        />
+        <img
+          id="slider"
+          src="./img/A4.png"
+          alt=""
+          class="bg-contain h-20 slider-image transition-all duration-500 ease-in-out"
+        />
+        <img
+          id="slider"
+          src="./img/A5.png"
+          alt=""
+          class="bg-contain h-20 slider-image transition-all duration-500 ease-in-out"
+        />
+        <img
+          id="slider"
+          src="./img/A6.png"
+          alt=""
+          class="bg-contain h-20 slider-image transition-all duration-500 ease-in-out"
+        />
+        <img
+          id="slider"
+          src="./img/A7.png"
+          alt=""
+          class="bg-contain h-20 slider-image transition-all duration-500 ease-in-out"
+        />
+        <img
+          id="slider"
+          src="./img/A1.png"
+          alt=""
+          class="bg-contain h-20 slider-image transition-all duration-500 ease-in-out"
+        />
+        <img
+          id="slider"
+          src="./img/A2.png"
+          alt=""
+          class="bg-contain h-20 slider-image transition-all duration-500 ease-in-out"
+        />
+      </div>
+
+      <!-- la partie de feedback des utilisateurs -->
+
+      <div class="flex flex-col justify-center h-auto p-6 bg-white">
+        <div
+          class="w-full bg-white flex flex-col items-center lg:px-20 xl:px-32 xls:px-40"
+        >
+          <div class="w-full flex justify-center items-center pb-6">
+            <div
+              data-aos="fade-right"
+              data-aos-delay="0"
+              data-aos-duration="1000"
+              class="w-16 h-1 rounded-md bg-gradient-to-r from-mauve to-principal"
+            ></div>
+          </div>
+          <div>
+            <h2
+              data-aos="fade-right"
+              data-aos-delay="0"
+              data-aos-duration="1000"
+              class="text-2xl mb-4 text-center items-center flex flex-col justify-center"
+            >
+              Why cutomers love <span class="font-bold">working with us</span>
+            </h2>
+          </div>
+          <div class="relative animation">
+            <div class="flex flex-col gap-4">
+              <div
+                data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom"
+                data-aos-delay="0"
+                data-aos-duration="1000"
+                class="w-full flex flex-col"
+              >
+                <div
+                  id="user-comment"
+                  class="w-full flex-col flex items-center hidden"
+                  data-count="5"
+                >
+                  <div
+                    class="w-full lg:w-[80%] justify-start flex pl-4 lg:pl-28"
+                  >
+                    <img
+                      src="./img/fluent_comma-24-regular.png"
+                      class=""
+                      alt=""
+                    />
+                  </div>
+                  <p class="w-full lg:w-[50%] text-text2 text-center">
+                    Without any doubt, I recommend Alcaine Solutions as one of
+                    the best web design and digital marketing agencies. One of
+                    the best agencies I've come across so far. Wouldn't be
+                    hesitated to introduce their work to someone else. Lorem
+                    ipsum, dolor sit amet consectetur adipisicing elit. Quo quod
+                    iusto adipisci quae illum placeat libero dolorum hic
+                    pariatur velit doloribus dolorem eius magni natus dolor ex
+                    aut, in odio!
+                  </p>
+                  <div class="w-full justify-end flex pr-4 lg:pr-56">
+                    <img src="./img/fluent_comma-24-regular (1).png" alt="" />
+                  </div>
+                </div>
+                <div
+                  id="user-comment"
+                  class="w-full flex-col flex items-center hidden"
+                  data-count="4"
+                >
+                  <!-- Duplicate the structure above for the second testimonial -->
+                  <div
+                    class="w-full lg:w-[80%] justify-start flex pl-4 lg:pl-28"
+                  >
+                    <img src="./img/fluent_comma-24-regular.png" alt="" />
+                  </div>
+                  <p class="w-full lg:w-[50%] text-text2 text-center">
+                    4 Les experts techniques de Microgels possèdent les
+                    connaissances et l'expertise approfondies nécessaires pour
+                    diagnostiquer rapidement les problèmes et fournir des
+                    solutions. Nous prenons en charge la communication avec les
+                    clients via WhatsApp, un chat en ligne, etc. Le temps de
+                    service est 24/7/365.
+                  </p>
+                  <div class="w-full justify-end flex pr-4 lg:pr-56">
+                    <img src="./img/fluent_comma-24-regular (1).png" alt="" />
+                  </div>
+                </div>
+                <div
+                  id="user-comment"
+                  class="w-full flex-col flex items-center"
+                  data-count="1"
+                >
+                  <!-- Duplicate the structure above for the second testimonial -->
+                  <div
+                    class="w-full lg:w-[80%] justify-start flex pl-4 lg:pl-28"
+                  >
+                    <img
+                      src="./img/fluent_comma-24-regular.png"
+                      class=""
+                      alt=""
+                    />
+                  </div>
+                  <p class="w-full lg:w-[50%] text-text2 text-center">
+                    1 Les experts techniques de Microgels possèdent les
+                    connaissances et l'expertise approfondies nécessaires pour
+                    diagnostiquer rapidement les problèmes et fournir des
+                    solutions. Nous prenons en charge la communication avec les
+                    clients via WhatsApp, un chat en ligne, etc. Le temps de
+                    service est 24/7/365.
+                  </p>
+                  <div class="w-full justify-end flex pr-4 lg:pr-56">
+                    <img src="./img/fluent_comma-24-regular (1).png" alt="" />
+                  </div>
+                </div>
+                <div
+                  id="user-comment"
+                  class="w-full flex-col flex items-center hidden"
+                  data-count="2"
+                >
+                  <!-- Duplicate the structure above for the second testimonial -->
+                  <div
+                    class="w-full lg:w-[80%] justify-start flex pl-4 lg:pl-28"
+                  >
+                    <img src="./img/fluent_comma-24-regular.png" alt="" />
+                  </div>
+                  <p class="w-full lg:w-[50%] text-text2 text-center">
+                    2 Les experts techniques de Microgels possèdent les
+                    connaissances et l'expertise approfondies nécessaires pour
+                    diagnostiquer rapidement les problèmes et fournir des
+                    solutions. Nous prenons en charge la communication avec les
+                    clients via WhatsApp, un chat en ligne, etc. Le temps de
+                    service est 24/7/365.
+                  </p>
+                  <div class="w-full justify-end flex pr-4 lg:pr-56">
+                    <img src="./img/fluent_comma-24-regular (1).png" alt="" />
+                  </div>
+                </div>
+                <div
+                  id="user-comment"
+                  class="w-full flex-col flex items-center hidden"
+                  data-count="3"
+                >
+                  <!-- Duplicate the structure above for the second testimonial -->
+                  <div
+                    class="w-full lg:w-[80%] justify-start flex pl-4 lg:pl-28"
+                  >
+                    <img src="./img/fluent_comma-24-regular.png" alt="" />
+                  </div>
+                  <p class="w-full lg:w-[50%] text-text2 text-center">
+                    3 Les experts techniques de Microgels possèdent les
+                    connaissances et l'expertise approfondies nécessaires pour
+                    diagnostiquer rapidement les problèmes et fournir des
+                    solutions. Nous prenons en charge la communication avec les
+                    clients via WhatsApp, un chat en ligne, etc. Le temps de
+                    service est 24/7/365.
+                  </p>
+                  <div class="w-full justify-end flex pr-4 lg:pr-56">
+                    <img src="./img/fluent_comma-24-regular (1).png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div
+                data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom"
+                data-aos-delay="500"
+                data-aos-duration="1000"
+                class="w-full flex justify-center gap-16 items-center overflow-hidden"
+              >
+                <div
+                  id="dev"
+                  class="customer-profile hidden lg:flex flex-col items-center opacity-30"
+                  data-count="5"
+                >
+                  <!-- Developer 1 profile -->
+                  <div class="flex flex-col text-center items-center">
+                    <img
+                      src="./img/CEO.png"
+                      class="rounded-full w-12 h-12 mb-2"
+                      alt="Reviewer 1"
+                    />
+                    <div class="flex text-yellow">
+                      <i class="bi bi-star-fill text-xs"></i>
+                      <i class="bi bi-star-fill text-xs"></i>
+                      <i class="bi bi-star-fill text-xs"></i>
+                      <i class="bi bi-star-fill text-xs"></i>
+                      <i class="bi bi-star-fill text-xs"></i>
+                    </div>
+                    <div class="flex flex-col text-center">
+                      <p class="text-gray-700 font-bold">Séverin Alimasi</p>
+                      <p class="text-gray-500">Java Developer</p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  id="dev"
+                  class="customer-profile hidden lg:flex flex-col items-center opacity-30"
+                  data-count="4"
+                >
+                  <!-- Developer 2 profile -->
+                  <div class="flex flex-col text-center items-center">
+                    <img
+                      src="./img/CEO.png"
+                      class="rounded-full w-12 h-12 mb-2"
+                      alt="Reviewer 1"
+                    />
+                    <div class="flex text-yellow">
+                      <i class="bi bi-star-fill text-xs"></i>
+                      <i class="bi bi-star-fill text-xs"></i>
+                      <i class="bi bi-star-fill text-xs"></i>
+                      <i class="bi bi-star-fill text-xs"></i>
+                      <i class="bi bi-star-fill text-xs"></i>
+                    </div>
+                    <div class="flex flex-col text-center">
+                      <p class="text-gray-700 font-bold">Baraka Homere</p>
+                      <p class="text-gray-500">Java Developer</p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  id="dev"
+                  class="customer-profile flex flex-col items-center"
+                  data-count="1"
+                >
+                  <!-- Developer 1 profile -->
+                  <div class="flex flex-col text-center items-center">
+                    <img
+                      src="./img/CEO.png"
+                      class="rounded-full w-12 h-12 mb-2"
+                      alt="Reviewer 1"
+                    />
+                    <div class="flex text-yellow">
+                      <i class="bi bi-star-fill text-xs"></i>
+                      <i class="bi bi-star-fill text-xs"></i>
+                      <i class="bi bi-star-fill text-xs"></i>
+                      <i class="bi bi-star-fill text-xs"></i>
+                      <i class="bi bi-star-fill text-xs"></i>
+                    </div>
+                    <div class="flex flex-col text-center">
+                      <p class="text-gray-700 font-bold">Tulia Oscar</p>
+                      <p class="text-gray-500">Java Developer</p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  id="dev"
+                  class="customer-profile hidden lg:flex flex-col items-center opacity-30"
+                  data-count="2"
+                >
+                  <!-- Developer 1 profile -->
+                  <div class="flex flex-col text-center items-center">
+                    <img
+                      src="./img/CEO.png"
+                      class="rounded-full w-12 h-12 mb-2"
+                      alt="Reviewer 1"
+                    />
+                    <div class="flex text-yellow">
+                      <i class="bi bi-star-fill text-xs"></i>
+                      <i class="bi bi-star-fill text-xs"></i>
+                      <i class="bi bi-star-fill text-xs"></i>
+                      <i class="bi bi-star-fill text-xs"></i>
+                      <i class="bi bi-star-fill text-xs"></i>
+                    </div>
+                    <div class="flex flex-col text-center">
+                      <p class="text-gray-700 font-bold">Charle Pascal</p>
+                      <p class="text-gray-500">Java Developer</p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  id="dev"
+                  class="customer-profile hidden lg:flex flex-col items-center opacity-30"
+                  data-count="3"
+                >
+                  <!-- Developer 1 profile -->
+                  <div class="flex flex-col text-center items-center">
+                    <img
+                      src="./img/CEO.png"
+                      class="rounded-full w-12 h-12 mb-2"
+                      alt="Reviewer 1"
+                    />
+                    <div class="flex text-yellow">
+                      <i class="bi bi-star-fill text-xs"></i>
+                      <i class="bi bi-star-fill text-xs"></i>
+                      <i class="bi bi-star-fill text-xs"></i>
+                      <i class="bi bi-star-fill text-xs"></i>
+                      <i class="bi bi-star-fill text-xs"></i>
+                    </div>
+                    <div class="flex flex-col text-center">
+                      <p class="text-gray-700 font-bold">Séverin Alimasi</p>
+                      <p class="text-gray-500">Java Developer</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="absolute md:top-[30%] top-[70%] transform md:-translate-y-1/2 -translate-y-[30%] w-full flex justify-between px-4"
+            >
+              <!-- <img
+                src="./img/Btn-left.png"
+                class="w-[45px] h-[45px] rounded-full z-50"
+                alt=""
+                onclick="navigateTestimonial(-1)"
+              /> -->
+              <div
+                class="absolute top-1/2 transform -translate-y-1/2 w-full flex justify-between px-4"
+              >
+                <img
+                  src="./img/Deco-img-arrow (3).png"
+                  class="translate-y-64 w-[143.84px] h-[209.02px] z-0 hidden md:flex"
+                  alt=""
+                />
+                <img
+                  src="./img/Deco-img-arrow (2).png"
+                  class="translate-y-64 w-[143.84px] h-[209.02px] z-0 hidden md:flex"
+                  alt=""
+                />
+              </div>
+              <i
+                id="leftArrow"
+                class="bi bi-arrow-left-circle cursor-pointer text-principal text-3xl z-50"
+              ></i>
+              <i
+                id="rightArrow"
+                class="bi bi-arrow-right-circle cursor-pointer text-principal text-3xl z-50"
+              ></i>
+              <!-- <img
+                src="./img/Btn-right.png"
+                class="w-[45px] h-[45px] rounded-full z-50"
+                alt=""
+                onclick="navigateTestimonial(1)"
+              /> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- les notions recentes étudier -->
+
+      <div class="bg-bg3 flex flex-col p-6 lg:px-20 xl:px-32 xls:px-40">
+        <div class="w-full flex justify-center items-center pt-16 pb-4">
+          <div
+            class="w-16 h-1 rounded-md bg-gradient-to-r from-mauve to-principal"
+          ></div>
+        </div>
+        <div class="flex justify-center items-center">
+          <h2 class="text-2xl flex flex-col items-center justify-center">
+            Our recent <span class="font-bold">Case studies</span>
+          </h2>
+        </div>
+        <div class="w-full flex flex-col gap-6">
+          <div
+            class="animation w-full lg:h-1/2 lg:flex flex-col bg-bg_bloc1 lg:flex-row flex-col-reverse justify-between items-center mt-16 rounded-md case-study-item"
+          >
+            <div class="w-full lg:w-1/2 lg:h-1/2">
+              <img
+                data-aos="fade-right"
+                data-aos-delay="0"
+                data-aos-duration="1000"
+                src="./img/1.jpg"
+                class="w-full rounded-lg"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-full lg:w-1/2 lg:h-[90%] bg-bg_bloc1 px-4 flex flex-col"
+            >
+              <h1
+                data-aos="fade-right"
+                data-aos-delay="500"
+                data-aos-duration="1500"
+                class="text-3xl font-bold text-text_bloc pb-6 pt-4"
+              >
+                Website Design for SCFC Canada
+              </h1>
+              <p
+                data-aos="fade-right"
+                data-aos-delay="500"
+                data-aos-duration="1500"
+                class="text-text"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Delectus numquam atque, quaerat dolorem, exercitationem ex ipsum
+                iste neque nisi consequatur debitis quia sed, assumenda optio
+                ipsa sequi similique suscipit dolores?
+              </p>
+              <div class="w-full flex justify-end mt-5 pb-6 lg:px-10 lg:pt-10">
+                <a href="" class="text-principal flex gap-2 items-center"
+                  >Read more <i class="bi bi-chevron-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-full lg:flex lg:flex-row bg-[#f0fff8] flex-col flex-col-reverse justify-between items-center rounded-md case-study-item"
+          >
+            <div class="w-full">
+              <img
+                data-aos="fade-right"
+                data-aos-delay="0"
+                data-aos-duration="1000"
+                src="./img/2.jpg"
+                class="w-full rounded-lg"
+                alt=""
+              />
+            </div>
+            <div class="w-full bg-bg_bloc2 px-4 flex flex-col">
+              <h1
+                data-aos="fade-right"
+                data-aos-delay="500"
+                data-aos-duration="1500"
+                class="text-3xl font-bold text-text_bloc pb-6 pt-4"
+              >
+                Website Design for SCFC Canada
+              </h1>
+              <p
+                data-aos="fade-right"
+                data-aos-delay="500"
+                data-aos-duration="1500"
+                class="text-text"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Delectus numquam atque, quaerat dolorem, exercitationem ex ipsum
+                iste neque nisi consequatur debitis quia sed, assumenda optio
+                ipsa sequi similique suscipit dolores?
+              </p>
+              <div class="w-full flex justify-end mt-5 pb-6 lg:px-10 lg:pt-10">
+                <a href="" class="text-principal flex gap-2 items-center"
+                  >Read more <i class="bi bi-chevron-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-full lg:flex lg:flex-row flex-col bg-[#fff3f3] flex-col-reverse justify-between items-center rounded-md case-study-item"
+          >
+            <div class="w-full">
+              <img
+                data-aos="fade-right"
+                data-aos-delay="0"
+                data-aos-duration="1000"
+                src="./img/3.jpg"
+                class="w-full rounded-lg"
+                alt=""
+              />
+            </div>
+            <div class="w-full bg-[#fff3f3] px-4 flex flex-col">
+              <h1
+                data-aos="fade-right"
+                data-aos-delay="500"
+                data-aos-duration="1500"
+                class="text-3xl font-bold text-[#57007B] pb-6 pt-4"
+              >
+                Website Design for SCFC Canada
+              </h1>
+              <p
+                data-aos="fade-right"
+                data-aos-delay="500"
+                data-aos-duration="1000"
+                class="text-[#4A5568]"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Delectus numquam atque, quaerat dolorem, exercitationem ex ipsum
+                iste neque nisi consequatur debitis quia sed, assumenda optio
+                ipsa sequi similique suscipit dolores?
+              </p>
+              <div class="w-full flex justify-end mt-5 pb-6 lg:px-10 lg:pt-10">
+                <a href="" class="text-[#b13980] flex gap-2 items-center"
+                  >Read more <i class="bi bi-chevron-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="w-full flex justify-end mt-5 lg:px-10">
+            <a href="" class="text-[#b13980] flex gap-2 items-center"
+              >Read more cas studies<i class="bi bi-chevron-right"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- le bloc qui decrit les chemin de construiction de de bon software -->
+
+      <div class="bg-[#ffffff] flex flex-col p-6 lg:px-20 xl:px-32 xls:px-40">
+        <div class="w-full flex justify-center items-center pt-10 pb-4">
+          <div
+            class="w-16 h-1 rounded-md bg-gradient-to-r from-[#750e83] to-[#b13980]"
+          ></div>
+        </div>
+        <div class="flex justify-center items-center">
+          <h2 class="text-2xl flex flex-col items-center justify-center">
+            Way of building <span class="font-bold">Great Software</span>
+          </h2>
+        </div>
+        <div class="flex flex-col gap-6">
+          <div
+            class="lg:flex lg:justify-between lg:items-center flex-col lg:flex-row lg:gap-6 block w-full"
+          >
+            <div class="w-full flex flex-col gap-4 mt-8">
+              <h1
+                data-aos="fade-right"
+                data-aos-delay="0"
+                data-aos-duration="1000"
+                class="font-bold text-3xl text-gray-800"
+              >
+                Build the right team to scale
+              </h1>
+              <div
+                data-aos="fade-right"
+                data-aos-delay="500"
+                data-aos-duration="1500"
+                class="flex flex-col gap-6"
+              >
+                <p class="text-gray-800">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Excepturi, at itaque officiis sunt aut reiciendis consequatur
+                  laborum error mollitia aliquam corporis quae, porro
+                </p>
+                <p class="text-gray-800">
+                  Our
+                  <a href="#" class="text-[#b13980]">delivery modal</a> laborum
+                  error mollitia aliquam corporis quae, porro
+                </p>
+              </div>
+              <div
+                data-aos="fade-right"
+                data-aos-delay="500"
+                data-aos-duration="1500"
+                class="flex flex-col gap-4"
+              >
+                <div class="border-l-2 border-l-[#b13980] flex pl-4">
+                  <div class="flex justify-start">
+                    <i class="bi bi-quote text-[#b13980]"></i>
+                  </div>
+                  <p class="text-[#b13980]">
+                    Excepturi, at itaque officiis sunt aut reiciendis
+                    consequatur laborum error mollitia aliquam corporis quae,
+                    porro
+                    <i class="bi bi-quote text-[#b13980]"></i>
+                  </p>
+                </div>
+                <div class="flex gap-2 items-center">
+                  <img
+                    src="./img/CEO.png"
+                    class="w-10 h-10 rounded-full"
+                    alt=""
+                  />
+                  <div>
+                    <h1 class="text-[16px] font-bold text-[#1a202c]">
+                      Baraka Homère
+                    </h1>
+                    <p class="text-[#718096] text-[13px]">CEO</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              data-aos="fade-right"
+              data-aos-delay="0"
+              data-aos-duration="1000"
+              class="mt-10"
+            >
+              <div class="w-full flex items-center justify-start relative">
+                <div
+                  class="w-10 h-10 absolute rounded-full bg-gradient-to-r z-10 from-[#ffef5e] to-[#F7936F]"
+                ></div>
+              </div>
+              <img
+                src="./img/bloc1.jpg"
+                class="w-full rounded-lg lg:h-[90%] relative z-50"
+                alt=""
+              />
+              <div
+                class="w-full flex items-center justify-center px-6 relative"
+              >
+                <div
+                  class="w-8 h-8 absolute rounded-full bg-gradient-to-r z-10 from-[#750e83] to-[#b13980]"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="lg:flex flex-col lg:gap-6 lg:justify-between lg:items-center lg:flex-row-reverse w-full"
+          >
+            <div class="w-full flex flex-col gap-4 lg:items-center">
+              <h1
+                data-aos="fade-right"
+                data-aos-delay="0"
+                data-aos-duration="1000"
+                class="font-bold text-3xl text-gray-800"
+              >
+                Build the right team to scale
+              </h1>
+              <div
+                data-aos="fade-right"
+                data-aos-delay="500"
+                data-aos-duration="1500"
+                class="flex flex-col gap-6"
+              >
+                <p class="text-gray-800">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Excepturi, at itaque officiis sunt aut reiciendis consequatur
+                  laborum error mollitia aliquam corporis quae, porro
+                </p>
+                <p class="text-gray-800">
+                  Our
+                  <a href="#" class="text-[#b13980]">delivery modal</a> laborum
+                  error mollitia aliquam corporis quae, porro
+                </p>
+              </div>
+              <div
+                data-aos="fade-right"
+                data-aos-delay="500"
+                data-aos-duration="1500"
+                class="flex flex-col gap-4"
+              >
+                <div class="border-l-2 border-l-[#b13980] flex pl-4">
+                  <div class="flex justify-start">
+                    <i class="bi bi-quote text-[#b13980]"></i>
+                  </div>
+                  <p class="text-[#b13980]">
+                    Excepturi, at itaque officiis sunt aut reiciendis
+                    consequatur laborum error mollitia aliquam corporis quae,
+                    porro
+                    <i class="bi bi-quote text-[#b13980]"></i>
+                  </p>
+                </div>
+                <div class="flex gap-2 items-center">
+                  <img
+                    src="./img/CEO.png"
+                    class="w-10 h-10 rounded-full"
+                    alt=""
+                  />
+                  <div>
+                    <h1 class="text-[16px] font-bold text-[#1a202c]">
+                      Baraka Homère
+                    </h1>
+                    <p class="text-[#718096] text-[13px]">CEO</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              data-aos="fade-right"
+              data-aos-delay="0"
+              data-aos-duration="1000"
+              class="mt-8"
+            >
+              <div class="w-full flex items-center justify-start relative">
+                <div
+                  class="w-10 h-10 absolute rounded-full bg-gradient-to-r z-10 from-[#ffef5e] to-[#F7936F]"
+                ></div>
+              </div>
+              <img
+                src="./img/bloc2.jpg"
+                class="w-full rounded-lg relative z-50"
+                alt=""
+              />
+              <div
+                class="w-full flex items-center justify-center px-6 relative"
+              >
+                <div
+                  class="w-8 h-8 absolute rounded-full bg-gradient-to-r z-10 from-[#750e83] to-[#b13980]"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="lg:flex lg:gap-6 lg:justify-between lg:items-center mt-5 lg:flex-row flex-col w-full"
+          >
+            <div class="w-full flex lg:items-center flex-col gap-4 mt-8">
+              <h1
+                data-aos="fade-right"
+                data-aos-delay="0"
+                data-aos-duration="1000"
+                class="font-bold text-3xl text-gray-800"
+              >
+                Build the right team to scale
+              </h1>
+              <div
+                data-aos="fade-right"
+                data-aos-delay="500"
+                data-aos-duration="1500"
+                class="flex flex-col gap-6"
+              >
+                <p class="text-gray-800">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Excepturi, at itaque officiis sunt aut reiciendis consequatur
+                  laborum error mollitia aliquam corporis quae, porro
+                </p>
+                <p class="text-gray-800">
+                  Our
+                  <a href="#" class="text-[#b13980]">delivery modal</a> laborum
+                  error mollitia aliquam corporis quae, porro
+                </p>
+              </div>
+              <div
+                data-aos="fade-right"
+                data-aos-delay="500"
+                data-aos-duration="1500"
+                class="flex flex-col gap-4"
+              >
+                <div class="border-l-2 border-l-[#b13980] flex pl-4">
+                  <div class="flex justify-start">
+                    <i class="bi bi-quote text-[#b13980]"></i>
+                  </div>
+                  <p class="text-[#b13980]">
+                    Excepturi, at itaque officiis sunt aut reiciendis
+                    consequatur laborum error mollitia aliquam corporis quae,
+                    porro
+                    <i class="bi bi-quote text-[#b13980]"></i>
+                  </p>
+                </div>
+                <div class="flex gap-2 items-center">
+                  <img
+                    src="./img/CEO.png"
+                    class="w-10 h-10 rounded-full"
+                    alt=""
+                  />
+                  <div>
+                    <h1 class="text-[16px] font-bold text-[#1a202c]">
+                      Baraka Homère
+                    </h1>
+                    <p class="text-[#718096] text-[13px]">CEO</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              data-aos="fade-right"
+              data-aos-delay="0"
+              data-aos-duration="1000"
+              class="mt-8"
+            >
+              <div class="w-full flex items-center justify-start relative">
+                <div
+                  class="w-10 h-10 absolute rounded-full bg-gradient-to-r z-10 from-[#ffef5e] to-[#F7936F]"
+                ></div>
+              </div>
+              <img
+                src="./img/bloc3.jpg"
+                class="w-full rounded-lg relative z-50"
+                alt=""
+              />
+              <div
+                class="w-full flex items-center justify-center px-6 relative"
+              >
+                <div
+                  class="w-8 h-8 absolute rounded-full bg-gradient-to-r z-10 from-[#750e83] to-[#b13980]"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- design et approche de developpemnt -->
+
+      <div
+        class="flex flex-col bg-[#e7daed] px-6 pb-10 lg:px-20 xl:px-32 xls:px-40"
+      >
+        <div class="w-full flex justify-center items-center pt-10 pb-4">
+          <div
+            class="w-16 h-1 rounded-md bg-gradient-to-r from-[#750e83] to-[#b13980]"
+          ></div>
+        </div>
+        <div class="flex justify-center items-center">
+          <h2 class="text-2xl flex flex-col items-center justify-center">
+            Our design and <span class="font-bold">development approch</span>
+          </h2>
+        </div>
+        <div
+          class="lg:w-full lg:flex lg:gap-6 mt-5 lg:justify-between flex-col lg:mt-8 gap-6"
+        >
+          <div class="lg:w-full md:flex lg:justify-between gap-6">
+            <div
+              data-aos="zoom-in"
+              data-aos-delay="0"
+              data-aos-duration="1000"
+              class="bg-[#fafafa] w-full p-6 flex justify-between gap-4"
+            >
+              <div
+                class="w-28 h-14 flex items-center justify-center rounded-md bg-[#253032] px-4"
+              >
+                <img
+                  src="./img/UX.png"
+                  class="w-full h-auto bg-contain"
+                  alt=""
+                />
+              </div>
+              <div class="flex flex-col gap-4">
+                <h1 class="font-bold text-[20px] text-[#1a202c]">
+                  UX Driven Engineering
+                </h1>
+                <p class="text-[14px] text-[#4a5568]">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+                  rem dolor ullam laudantium quos quis temporibus, officia vel
+                </p>
+              </div>
+            </div>
+            <div
+              data-aos="zoom-in"
+              data-aos-delay="0"
+              data-aos-duration="1500"
+              class="bg-[#FAFAFA] mt-5 lg:mt-0 w-full p-6 flex justify-between gap-4"
+            >
+              <div
+                class="w-28 h-14 flex items-center justify-center rounded-md bg-[#59baef] px-4"
+              >
+                <img src="./img/code 1.png" class="w-full h-auto" alt="" />
+              </div>
+              <div class="flex flex-col gap-4">
+                <h1 class="font-bold text-[20px] text-[#1a202c]">
+                  Developing Shared Understanding
+                </h1>
+                <p class="text-[14px] text-[#4a5568]">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+                  rem dolor ullam laudantium quos quis temporibus, officia vel
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="md:flex lg:justify-between gap-6">
+            <div
+              data-aos="zoom-in"
+              data-aos-delay="0"
+              data-aos-duration="1000"
+              class="bg-[#FAFAFA] mt-5 lg:mt-0 w-full p-6 flex justify-between gap-4"
+            >
+              <div
+                class="w-28 h-14 flex items-center justify-center rounded-md bg-[#ff69aa] px-4"
+              >
+                <img
+                  src="./img/LOVE.png"
+                  class="w-full h-auto bg-contain"
+                  alt=""
+                />
+              </div>
+              <div class="flex flex-col gap-4">
+                <h1 class="font-bold text-[20px] text-[#1a202c]">
+                  Proven Experience and Expertise
+                </h1>
+                <p class="text-[14px] text-[#4a5568]">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+                  rem dolor ullam laudantium quos quis temporibus, officia vel
+                </p>
+              </div>
+            </div>
+            <div
+              data-aos="zoom-in"
+              data-aos-delay="0"
+              data-aos-duration="1000"
+              class="bg-[#FAFAFA] mt-5 lg:mt-0 w-full p-6 flex justify-between gap-4"
+            >
+              <div
+                class="w-28 h-14 flex items-center justify-center rounded-md bg-[#55e6e1] px-4"
+              >
+                <img
+                  src="./img/SECURITY.png"
+                  class="w-full h-auto bg-contain"
+                  alt=""
+                />
+              </div>
+              <div class="flex flex-col gap-4">
+                <h1 class="font-bold text-[20px] text-[#1a202c]">
+                  Security & Intellectuel Property (IP)
+                </h1>
+                <p class="text-[14px] text-[#4a5568]">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+                  rem dolor ullam laudantium quos quis temporibus, officia vel
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="md:flex lg:justify-between gap-6">
+            <div
+              data-aos="zoom-in"
+              data-aos-delay="0"
+              data-aos-duration="1000"
+              class="bg-[#FAFAFA] w-full mt-5 lg:mt-0 p-6 flex justify-between gap-4"
+            >
+              <div
+                class="w-28 h-14 flex items-center justify-center rounded-md bg-[#f9c95d] px-4"
+              >
+                <img
+                  src="./img/VERIFIER.png"
+                  class="w-full h-auto bg-contain"
+                  alt=""
+                />
+              </div>
+              <div class="flex flex-col gap-4">
+                <h1 class="font-bold text-[20px] text-[#1a202c]">
+                  Code Reviews
+                </h1>
+                <p class="text-[14px] text-[#4a5568]">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+                  rem dolor ullam laudantium quos quis temporibus, officia vel
+                </p>
+              </div>
+            </div>
+            <div
+              data-aos="zoom-in"
+              data-aos-delay="0"
+              data-aos-duration="1000"
+              class="bg-[#FAFAFA] w-full mt-5 lg:mt-0 p-6 flex justify-between gap-4"
+            >
+              <div
+                class="w-28 h-14 flex items-center justify-center rounded-md bg-[#a22979] px-4"
+              >
+                <img
+                  src="./img/CADENAS.png"
+                  class="w-full h-auto bg-contain"
+                  alt=""
+                />
+              </div>
+              <div class="flex flex-col gap-4">
+                <h1 class="font-bold text-[20px] text-[#1a202c]">
+                  Quality Assurance & Testing
+                </h1>
+                <p class="text-[14px] text-[#4a5568]">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+                  rem dolor ullam laudantium quos quis temporibus, officia vel
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- les technologie utilisées -->
+
+      <div class="px-6">
+        <div class="w-full flex justify-center items-center pt-10 pb-4">
+          <div
+            class="w-14 h-1 rounded-md bg-gradient-to-r from-[#750e83] to-[#b13980]"
+          ></div>
+        </div>
+        <div class="flex justify-center items-center">
+          <h2 class="text-2xl flex flex-col items-center justify-center">
+            Our <span class="font-bold">Tech Stack</span>
+          </h2>
+        </div>
+        <div class="mt-8">
+          <div class="w-full flex justify-center gap-10">
+            <h2
+              class="text-2xl font-bold text-[#b13980] border-b-2 border-b-[#b13980] pb-2"
+            >
+              Backend
+            </h2>
+            <h2 class="text-xl font-bold">Frontend</h2>
+            <h2 class="text-xl font-bold">Databases</h2>
+            <h2 class="text-xl font-bold hidden lg:flex">CMS</h2>
+            <h2 class="text-xl font-bold hidden lg:flex">CloudTesting</h2>
+            <h2 class="text-xl font-bold hidden lg:flex">DevOps</h2>
+          </div>
+          <div class="flex flex-col">
+            <div
+              class="lg:w-full flex flex-wrap justify-center gap-10 items-center mt-5"
+            >
+              <img src="./img/mysql.png" class="w-24 h-20" alt="" />
+              <img src="./img/mysql.png" class="w-24 h-20" alt="" />
+              <img src="./img/mysql.png" class="w-24 h-20" alt="" />
+              <img src="./img/mysql.png" class="w-24 h-20" alt="" />
+              <img src="./img/mysql.png" class="w-24 h-20" alt="" />
+            </div>
+            <div
+              class="lg:w-full flex flex-wrap justify-center gap-10 items-center mt-5"
+            >
+              <img src="./img/mysql.png" class="w-24 h-20" alt="" />
+              <img src="./img/mysql.png" class="w-24 h-20" alt="" />
+              <img src="./img/mysql.png" class="w-24 h-20" alt="" />
+              <img src="./img/mysql.png" class="w-24 h-20" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- les blocs de "how development ...." -->
+
+      <div class="mt-8 p-6 bg-bg">
+        <div class="w-full flex justify-center items-center pt-10 pb-4">
+          <div
+            class="w-14 h-1 rounded-md bg-gradient-to-r from-[#750e83] to-[#b13980]"
+          ></div>
+        </div>
+        <div class="flex justify-center items-center">
+          <h2 class="text-2xl flex flex-col items-center justify-center">
+            How Devepment <span class="font-bold">through Alcaline Works</span>
+          </h2>
+        </div>
+        <div class="mt-8 flex flex-col justify-center gap-6">
+          <div
+            class="md:flex grid columns-1 items-center justify-center gap-6 lg:px-20 xl:px-32 xls:px-40"
+          >
+            <div
+              class="border rounded-lg p-4 w-[299px] h-[159px] lg:h-[159px] md:h-auto"
+            >
+              <div class="flex gap-2">
+                <h1 class="font-bold text-[18px] text-[#b13980]">#1</h1>
+                <h1 class="font-bold text-[18px]">Assemble the right team</h1>
+              </div>
+              <p class="text-gray-500 mt-2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+                tempora optio modi
+              </p>
+            </div>
+            <div
+              class="border lg:h-[159px] md:h-auto rounded-lg mt-5 md:mt-0 p-4 w-[299px] h-[159px]"
+            >
+              <div class="flex gap-2">
+                <h1 class="font-bold text-[18px] text-[#b13980]">#2</h1>
+                <h1 class="font-bold text-[18px]">Assemble the right team</h1>
+              </div>
+              <p class="text-gray-500 mt-2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+                tempora optio modi
+              </p>
+            </div>
+            <div
+              class="border lg:h-[159px] md:h-auto mt-5 md:mt-0 rounded-lg p-4 w-[299px] h-[159px]"
+            >
+              <div class="flex gap-2">
+                <h1 class="font-bold text-[18px] text-[#b13980]">#3</h1>
+                <h1 class="font-bold text-[18px]">Assemble the right team</h1>
+              </div>
+              <p class="text-gray-500 mt-2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+                tempora optio modi
+              </p>
+            </div>
+          </div>
+          <div
+            class="w-full md:flex justify-center items-center px-10 hidden relative"
+          >
+            <div
+              class="border-r-4 border-r-principal h-11 absolute lg:left-52 xls:left-[30%] md:left-40 -top-5"
+            ></div>
+            <div
+              class="border-r-4 border-r-principal h-11 absolute md:left-[45%] lg:left-[58%] xls:left-[55%] -top-5"
+            ></div>
+            <div
+              class="border-r-4 border-r-principal h-11 absolute left-[80%] xls:left-[75%] -top-5"
+            ></div>
+            <div
+              class="border-r-4 border-r-principal h-11 absolute top-5"
+            ></div>
+            <div
+              class="border-r-4 border-r-principal h-11 absolute top-5 md:left-[85%] xls:left-[70%] lg:left-[70%]"
+            ></div>
+            <div
+              class="border-r-4 border-r-principal h-11 absolute top-5 md:left-[10%] xls:left-[25%] lg:left-60"
+            ></div>
+            <img src="./img/Line 5.png" class="w-[1182px] h-1" alt="" />
+
+            <img
+              src="./img/Trophy_perspective_matte.png"
+              class="w-[42px] h-[42px]"
+              alt=""
+            />
+          </div>
+          <div
+            class="md:flex block items-center md:justify-center gap-6 lg:px-1"
+          >
+            <div
+              class="border lg:h-[159px] md:h-auto rounded-lg p-4 w-[299px] h-[159px]"
+            >
+              <div class="flex gap-2">
+                <h1 class="font-bold text-[18px] text-[#b13980]">#4</h1>
+                <h1 class="font-bold text-[18px]">Assemble the right team</h1>
+              </div>
+              <p class="text-gray-500 mt-2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+                tempora optio modi
+              </p>
+            </div>
+            <div
+              class="border lg:h-[159px] md:h-auto mt-5 md:mt-0 rounded-lg p-4 w-[299px] h-[159px]"
+            >
+              <div class="flex gap-2">
+                <h1 class="font-bold text-[18px] text-[#b13980]">#5</h1>
+                <h1 class="font-bold text-[18px]">Assemble the right team</h1>
+              </div>
+              <p class="text-gray-500 mt-2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+                tempora optio modi
+              </p>
+            </div>
+            <div
+              class="border lg:h-[159px] md:h-auto mt-5 md:mt-0 rounded-lg p-4 w-[299px] h-[159px]"
+            >
+              <div class="flex gap-2">
+                <h1 class="font-bold text-[18px] text-[#b13980]">#6</h1>
+                <h1 class="font-bold text-[18px]">Assemble the right team</h1>
+              </div>
+              <p class="text-gray-500 mt-2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+                tempora optio modi
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- les ressources -->
+
+      <div class="px-6 lg:px-10 xl:px-32 xls:px-40">
+        <div class="w-full flex justify-center items-center pt-10 pb-4">
+          <div
+            class="w-14 h-1 rounded-md bg-gradient-to-r from-[#750e83] to-[#b13980]"
+          ></div>
+        </div>
+        <div class="flex justify-center items-center">
+          <h2 class="text-2xl flex flex-col items-center justify-center">
+            Featured <span class="font-bold"> Ressources</span>
+          </h2>
+        </div>
+        <div
+          class="mt-8 lg:flex lg:justify-between lg:w-full lg:gap-10 lg:px-10 md:gap-6"
+        >
+          <div class="w-full flex flex-col gap-4">
+            <img src="./img/ft1.jpg" class="w-full rounded-lg" alt="" />
+            <div>
+              <p>
+                Lorem ipsum,Quidem architecto animi dolorem esse possimus
+                similique
+              </p>
+              <div class="w-full flex justify-end mt-5 pb-6">
+                <a href="" class="text-[#b13980] flex gap-2 items-center"
+                  >Read more <i class="bi bi-chevron-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="w-full flex flex-col gap-4 mt-10 lg:mt-0">
+            <img src="./img/ft2.jpg" class="w-full rounded-lg" alt="" />
+            <div>
+              <p>
+                Lorem ipsum,Quidem architecto animi dolorem esse possimus
+                similique
+              </p>
+              <div class="w-full flex justify-end mt-5 pb-6">
+                <a href="" class="text-[#b13980] flex gap-2 items-center"
+                  >Read more <i class="bi bi-chevron-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="w-full flex flex-col gap-4 mt-10 lg:mt-0">
+            <img src="./img/ft5.jpg" class="w-full rounded-lg" alt="" />
+            <div>
+              <p>
+                Lorem ipsum,Quidem architecto animi dolorem esse possimus
+                similique
+              </p>
+              <div class="w-full flex justify-end mt-5 pb-6">
+                <a href="" class="text-[#b13980] flex gap-2 items-center"
+                  >Read more <i class="bi bi-chevron-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="w-full flex flex-col gap-4 mt-10 lg:mt-0">
+            <img src="./img/ft4.jpg" class="w-full rounded-lg" alt="" />
+            <div>
+              <p>
+                Lorem ipsum,Quidem architecto animi dolorem esse possimus
+                similique
+              </p>
+              <div class="w-full flex justify-end mt-5 pb-6">
+                <a href="" class="text-[#b13980] flex gap-2 items-center"
+                  >Read more <i class="bi bi-chevron-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="w-full flex flex-col gap-4 mt-10 lg:mt-0">
+            <img src="./img/ft5.jpg" class="w-full rounded-lg" alt="" />
+            <div>
+              <p>
+                Lorem ipsum,Quidem architecto animi dolorem esse possimus
+                similique
+              </p>
+              <div class="w-full flex justify-end mt-5 pb-6">
+                <a href="" class="text-[#b13980] flex gap-2 items-center"
+                  >Read more <i class="bi bi-chevron-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- devenir top developer -->
+
+      <div
+        class="px-6 mt-8 md:px-10 xl:px-32 xls:px-40 md:flex md:justify-center lg:items-center md:w-full"
+      >
+        <div
+          class="w-ful h-[285px] md:h-[290px] md:w-[85%] p-4 rounded-lg items-center md:flex md:justify-between md:px-5 lg:px-14 gap-10 bg-[#f1f1f5]"
+        >
+          <h1 class="font-bold text-xl flex flex-col">
+            Hire the best developers and<span>designers around!</span>
+          </h1>
+          <div
+            class="relative mt-20 md:mt-4 lg:mt-2 flex justify-center items-center md:justify-start md:items-center"
+          >
+            <img
+              src="./img/Group 40 (1).png"
+              class="w-[90.46px] h-[162px] absolute -bottom-14 left-24 md:left-14 xls:left-16"
+              alt=""
+            />
+            <button
+              class="text-[#ffffff] bg-gradient-to-r from-[#ffc656] to-[#f16063] py-2 px-5 rounded-lg text-xl"
+            >
+              Hire Top developers
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- la partie footer du site -->
+
+      <footer class="pt-[60px] lg:px-20 md:px-10 xl:px-32 xls:px-40 px-6">
+        <section class="relative mx-[30px]">
+          <div
+            class="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 mb-[36px] gap-[50px]"
+          >
+            <div class="grid gap-2">
+              <h2 class="text-[18px] font-semibold text-text">Logo</h2>
+              <div class="mb-16 flex flex-col gap-2 text-gray2">
+                <p class="hover:text-blanc duration-300 text-text">
+                  Lorem repellat veniam? Voluptatem saepe ipsam deleniti
+                  provident, ipsum sunt officia suscipit culpa earum in
+                  laudantium ipsa molestiae?
+                </p>
+                <img src="./img/google.png" class="w-[50%] mt-5" alt="" />
+              </div>
+            </div>
+            <div class="grid gap-[10px]">
+              <h2 class="text-[18px] font-semibold text-text">Links</h2>
+              <ul class="text-grey">
+                <li class="pb-4">
+                  <i class="bi bi-chevron-right text-[#b13980]"></i
+                  ><a
+                    href=""
+                    class="hover:text-[#b13980] text-gray-500 duration-300"
+                  >
+                    About Us</a
+                  >
+                </li>
+                <li class="pb-4">
+                  <i class="bi bi-chevron-right text-[#b13980]"></i
+                  ><a
+                    href=""
+                    class="hover:text-[#b13980] text-gray-500 duration-300"
+                  >
+                    Services</a
+                  >
+                </li>
+                <li class="pb-4">
+                  <i class="bi bi-chevron-right text-[#b13980]"></i
+                  ><a
+                    href=""
+                    class="hover:text-[#b13980] text-gray-500 duration-300"
+                  >
+                    Case studies</a
+                  >
+                </li>
+                <li class="pb-4">
+                  <i class="bi bi-chevron-right text-[#b13980]"></i
+                  ><a
+                    href=""
+                    class="hover:text-[#b13980] text-gray-500 duration-300"
+                  >
+                    How it Works</a
+                  >
+                </li>
+                <li class="pb-4">
+                  <i class="bi bi-chevron-right text-[#b13980]"></i
+                  ><a
+                    href=""
+                    class="hover:text-[#b13980] text-gray-500 duration-300"
+                  >
+                    Blog</a
+                  >
+                </li>
+                <li class="pb-4">
+                  <i class="bi bi-chevron-right text-[#b13980]"></i
+                  ><a
+                    href=""
+                    class="hover:text-[#b13980] text-gray-500 duration-300"
+                  >
+                    Careers</a
+                  >
+                </li>
+                <li class="pb-4">
+                  <i class="bi bi-chevron-right text-[#b13980]"></i
+                  ><a
+                    href=""
+                    class="hover:text-[#b13980] text-gray-500 duration-300"
+                  >
+                    Areas We Serve</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="grid gap-[10px]">
+              <h2 class="text-[18px] font-semibold text-text">Contact us</h2>
+              <div class="flex mb-16 flex-col gap-4">
+                <p class="text-gray-500 pb-2">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. est
+                  molestias, earum fuga sapiente autem rerum rem assumenda.
+                </p>
+                <p class="text-gray-500">+257 66460589</p>
+              </div>
+            </div>
+            <div class="flex items-end justify-end">
+              <div class="flex lg:h-44 lg:items-end gap-4">
+                <a href="#"><i class="bi bi-facebook text-text"></i></a>
+                <a href="#"><i class="bi bi-instagram text-text"></i></a>
+                <a href="#"><i class="bi bi-twitter-x text-text"></i></a>
+                <a href="#"><i class="bi bi-linkedin text-text"></i></a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          class="w-full flex justify-center items-center border-t py-4 border-t-text"
+        >
+          <p class="text-text text-sm">
+            &copy 2023 Copyright by Agency Solutions. All rights reserved.
+          </p>
+          <div></div>
+        </section>
+      </footer>
+    </section>
+    <script>
+      AOS.init();
+    </script>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

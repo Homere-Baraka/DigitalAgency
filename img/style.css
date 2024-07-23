@@ -1,0 +1,17 @@
+/* CSS pour les cercles et les coches */
+.cercle {
+    border: 2px solid #000;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+  
+  .vide {
+    background: #fff;
+  }
+  
+  .rempli {
+    background: #000;
+  }
+  
